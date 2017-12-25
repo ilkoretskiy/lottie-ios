@@ -62,4 +62,11 @@
   return returnPath;
 }
 
+-(id)keyframeDataForValue:(id)value {
+    if ([value isKindOfClass:[NSDictionary class]]) {
+        return value;
+    }
+    return nil;
+}
+
 @end
